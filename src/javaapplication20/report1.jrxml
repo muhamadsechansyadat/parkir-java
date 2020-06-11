@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="350" pageHeight="350" columnWidth="310" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="6130d5be-e468-4bdc-940d-2a22a5a8de66">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM tb_struk;]]>
+	</queryString>
+	<field name="kd_parkir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="plat_nomor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kendaraan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam_masuk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="0" width="183" height="29" uuid="6f4691d5-6d07-4b25-8a90-5173cbe30bc2"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Parkiran Sederhana]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="49" y="0" width="208" height="39" uuid="d6ab01cf-e791-4e7b-88f4-23d09095d305"/>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Jalan Sutomo No.1 Medan - 20235
+North Sumatera, INDONESIA
+Email : iamsechanmuhammad@gmail.com
+Website : http://www.savirasyadat.com]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="43" width="309" height="1" uuid="750f25fb-a7e0-40ff-afae-741579960c46"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="189" splitType="Stretch">
+			<staticText>
+				<reportElement x="105" y="6" width="100" height="26" uuid="c67e5e4c-7da0-4137-ab07-b6d75afe011f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Karcis Masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="100" height="20" uuid="c3a67132-2b67-4e30-8bd5-d79863c767c4"/>
+				<text><![CDATA[Kode Parkir : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="62" width="100" height="20" uuid="f8f08ed2-f150-43e1-ba38-9fc36e16287f"/>
+				<text><![CDATA[Plat Nomor : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="81" width="100" height="20" uuid="3bd255fe-1d2d-4786-87f1-c74fc860dcc4"/>
+				<text><![CDATA[Jenis Kendaraan : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="101" width="100" height="20" uuid="1a6b4d53-b6ad-4f1d-8b64-5a9034125386"/>
+				<text><![CDATA[Jam Masuk : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="105" y="42" width="100" height="20" uuid="329ef831-b735-470b-8683-e69e8d0d6bad"/>
+				<textFieldExpression><![CDATA[$F{kd_parkir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="61" width="100" height="20" uuid="2518510e-b0d1-4522-874b-de2d60224d67"/>
+				<textFieldExpression><![CDATA[$F{plat_nomor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="81" width="100" height="20" uuid="4c3579e2-388b-41ba-b460-88ee400aa4b1"/>
+				<textFieldExpression><![CDATA[$F{jenis_kendaraan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="101" width="100" height="20" uuid="88e4c16f-9e58-4837-aa09-52b3c89fe30d"/>
+				<textFieldExpression><![CDATA[$F{jam_masuk}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="142" width="310" height="1" uuid="181d7956-2e3d-461f-b8d9-cfd774646779"/>
+			</line>
+			<staticText>
+				<reportElement x="15" y="143" width="283" height="46" uuid="6040cbbe-3f86-4c0b-ace9-4fcb58cf0f8f"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Kuncilah Kendaraan anda Keamanan kendaraan anda
+adalah Prioritas kami
+SaviraSyadat - Parkiran Sederhana]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="1" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="1" splitType="Stretch"/>
+	</summary>
+</jasperReport>
